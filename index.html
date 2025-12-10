@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Bisal Shah</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* ADDED: Targeting the new section for background color and padding adjustment */
+        #game-design-skills {
+            background-color: #000000 !important; /* Ensure solid black background */
+        }
+        #game-design-skills .container {
+             /* Adjusts the width of the card section to align with other content */
+            max-width: 1200px; 
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #6f6fa6 0%, #fdfdfd 100%);
+        }
+    </style>
+</head>
+
+<body class="min-h-full bg-gray-900 text-white font-sans">
+
+    <section class="hero-block" id="home">
+        <video autoplay muted loop id="bg-video">
+            <source src="dream.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="overlay">
+            <header class="header">
+                <div class="logo">My Portfolio</div>
+                <nav class="nav">
+                    <a href="#home">Home</a>
+                    <a href="#about-me-section-1">About Me</a>
+                    <a href="#game-design-skills">Skills</a>
+                    <a href="#projects-header">Projects</a>
+                </nav>
+            </header>
+
+            <section class="hero">
+                <h1>Hello, I'm Bisal</h1>
+                <p>A passionate game designer & developer. I create interactive 3D experiences.</p>
+
+                <div class="scroll-down-button" onclick="scrollToAbout()">
+                    <div class="mouse-shape">
+                        <div class="wheel"></div>
+                    </div>
+                    <p>Scroll Down ↓</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="about-me-section-1">
+        <div class="about-container">
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        <image class="home__blob-img" x="12" y="12" xlink:href="port6.jpeg" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="about-text">
+                <h1>ABOUT ME</h1>
+                <h3>Unity Game Designer & Developer</h3>
+                <p>
+                    I'm Bisal Shah, a game designer and Unity developer. I love creating interactive 3D environments and immersive experiences. My journey blends creative design with technical skills to build games that tell stories and engage players.
+                </p>
+
+     
+<a href="contact.html" class="btn-resume">
+    Contact Me <i class="uil uil-message button__icon"></i>
+</a>
+                <div class="social-icons-vertical">
+                    <a href="https://yourusername.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/in/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about-me-section-2">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="photo.jpg" alt="Bisal Shah">
+            </div>
+            <div class="about-text">
+                <h1 class="title">GAME & LEVEL<br><span>DESIGNER</span></h1>
+                <p class="subtitle">..and Unity wizard.</p>
+                <p class="description">
+                    My name is <em>Bisal Shah</em>. I'm a passionate game designer and Unity developer with experience in
+                    <span class="tag1">Game Design</span>,
+                    <span class="tag2">Level Design</span>,
+                    <span class="tag3">Scripting</span>, and
+                    <span class="tag4">Visual Effects</span>. I love blending creativity with technical skill to build immersive, story-driven experiences. Whether I'm designing puzzle mechanics or open worlds, I always try to tell a story through interactivity.
+                </p>
+
+                <a download="" href="Resume.pdf" class="res-button">
+                    RESUME <i class="uil uil-download-alt button__icon"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="game-design-skills" class="py-12 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <header class="text-center mb-16 animate-fade-in">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    🎮 Advanced Game Design Skills
+                </h1>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Crafting immersive experiences through creative design and technical expertise
+                </p>
+            </header>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in">
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                        <i class="fas fa-dice-d6 text-purple-400 mr-3"></i> Game Mechanics
+                    </h2>
+                    <p class="text-sm sm:text-base text-gray-400 mb-6">Designing core rules and systems for player interaction.</p>
+                </div>
+
+                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in" style="animation-delay: 0.1s;">
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                        <i class="fas fa-map-marked-alt text-pink-400 mr-3"></i> Level Design
+                    </h2>
+                    <p class="text-sm sm:text-base text-gray-400 mb-6">Creating compelling and engaging player spaces and environments.</p>
+                </div>
+
+                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in" style="animation-delay: 0.2s;">
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                        <i class="fas fa-book-reader text-blue-400 mr-3"></i> Narrative & Lore
+                    </h2>
+                    <p class="text-sm sm:text-base text-gray-400 mb-6">Developing deep, cohesive stories and background world knowledge.</p>
+                </div>
+                
+                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in" style="animation-delay: 0.3s;">
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                        <i class="fas fa-drafting-compass text-teal-400 mr-3"></i> Prototyping
+                    </h2>
+                    <p class="text-sm sm:text-base text-gray-400 mb-6">Quickly iterating and testing design concepts using Unity.</p>
+                </div>
+                
+                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in" style="animation-delay: 0.4s;">
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                        <i class="fas fa-fist-raised text-red-400 mr-3"></i> Combat Design
+                    </h2>
+                    <p class="text-sm sm:text-base text-gray-400 mb-6">Tuning satisfying and challenging combat loops and enemy encounters.</p>
+                </div>
+
+                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in" style="animation-delay: 0.5s;">
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                        <i class="fas fa-file-alt text-yellow-400 mr-3"></i> GDD & Docs
+                    </h2>
+                    <p class="text-sm sm:text-base text-gray-400 mb-6">Writing clear, comprehensive Game Design Documents and specs.</p>
+                </div>
+            </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="technical-skills-icons" class="py-12 bg-black flex items-center justify-center">
+    <div class="w-full max-w-4xl p-8 rounded-2xl">
+        
+        <header class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-white-900 mb-4">Technical Skills</h1>
+            <p class="text-lg text-white-600">Professional expertise across development, design, and productivity tools</p>
+        </header>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-x-12 gap-y-8 justify-items-center">
+            
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+                <i class="fab fa-unity text-5xl"></i>
+                <span class="text-lg">Unity</span>
+            </div>
+            
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+                <i class="fas fa-code text-4xl"></i> 
+                <span class="text-lg">C#</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+                <i class="fab fa-github text-5xl"></i>
+                <span class="text-lg">GitHub</span>
+            </div>
+            
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+                <i class="fab fa-microsoft text-5xl"></i>
+                <span class="text-lg">Microsoft Office</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+                <i class="fas fa-palette text-4xl"></i>
+                <span class="text-lg">Photoshop</span>
+            </div>
+            
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+                <i class="fas fa-laptop-code text-4xl"></i>
+                <span class="text-lg">Visual Studio</span>
+            </div>
+            
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+                <i class="fab fa-figma text-5xl"></i>
+                <span class="text-lg">Figma</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+                <i class="fas fa-paint-brush text-4xl"></i>
+                <span class="text-lg">Canva</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+ <header class="text-center bg-black ">
+            <h1 class="text-4xl font-bold text-white-900 mb-4">Projects</h1>
+            <p class="text-lg text-white-600">A showcase of projects from concept to completion, </p>
+                <p>demonstrating skills in systems design, narrative, and prototyping.</p>
+        </header>
+
+
+    <!-- <section class="projects-title-section" id="projects-header">
+        <h1 class="projects-main-title"><br><span>PROJECTS</span></h1>
+        
+    </section> -->
+    <section id="projects">
+        
+        <div class="project-block white-bg">
+            <div class="project-right-media">
+                <div class="project-content">
+                    <h2 class="project-title">Hearvest Of The Dead !</h2>
+                    <p class="project-description">An graphic novel adventure game about growing up in monster society.</p>
+                    <div class="project-buttons">
+                        <a href="-port71.html" class="btn-more-info">More Info</a>
+                        <a href="https://store.steampowered.com/" target="_blank" class="btn-steam">Get It on ITCH.IO</a>
+                    </div>
+                </div>
+                <div class="project-media">
+                    <img src="Project-image 1.svg" alt="Monster Loves You Too Screenshot">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="project-block black-bg">
+             <div class="project-left-media">
+                 <div class="project-media">
+                    <img src="Project-2.svg" alt="Remastered Project Screenshot">
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Cube - Runner </h2>
+                    <p class="project-description">The next chapter in our award-winning skydiving sequel.</p>
+                    <div class="project-buttons">
+                        <a href="port72.html" class="btn-more-info">More Info!</a>
+                        <a href="https://store.steampowered.com/" target="_blank" class="btn-steam">Get It on Steam!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="project-block white-bg">
+            <div class="project-right-media">
+                <div class="project-content">
+                    <h2 class="project-title">H---------------d !</h2>
+                    <p class="project-description">An graphic novel adventure game about growing up in monster society.</p>
+                    <div class="project-buttons">
+                        <a href="-port71.html" class="btn-more-info">More Info</a>
+                        <a href="https://store.steampowered.com/" target="_blank" class="btn-steam">Get It on ITCH.IO</a>
+                    </div>
+                </div>
+                <div class="project-media">
+                    <img src="Project-image 1.svg" alt="Monster Loves You Too Screenshot">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+<a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+
+    <footer class="main-portfolio-footer">
+        <div class="footer-top">
+            
+            <div class="footer-column contact-col">
+                <h4>CONTACT DETAILS</h4>
+                <p>
+                    <i class="uil uil-envelope-alt"></i> 
+                    Mail: <a href="mailto:bisalshah.dev@email.com" style="color: #666; text-decoration: none;">bisalshah.dev@email.com</a>
+                </p>
+                <p>
+                    <i class="uil uil-phone"></i> 
+                    Contact No: +91 98765 43210
+                </p>
+                <p>
+                    <i class="uil uil-location-pin-alt"></i> 
+                    Location: Bangalore, India
+                </p>
+            </div>
+            
+            <div class="footer-column message-col">
+                <h4>Get In Touch</h4>
+                <p>
+                    I'd love to hear about your project and discuss how we can work together. Drop me a message!
+                </p>
+                <br>
+            <a href="contact.html" class="btn-contact">
+               Contact Me <i class="uil uil-message button__icon"></i>
+            </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom-nav">
+            <a href="#home">HOME</a>
+            <a href="#about-me-section-1">ABOUT ME</a>
+            <a href="#game-design-skills">SKILLS</a>
+            <a href="#projects-header">PROJECTS</a>
+        </div>
+
+        <div class="footer-bottom-social">
+            <a href="https://yourusername.itch.io/"><i class="fab fa-itch-io"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="footer-copyright-bottom">
+            <p>COPYRIGHT ©  BISAL SHAH / Made on Earth by humans</p>
+        </div>
+    </footer>
+
+
+<script src="index.js"></script>
+    <script>
+        // Ensure the global scrollToAbout function is available for the button
+        function scrollToAbout() {
+            const aboutSection = document.getElementById('about-me-section-1');
+            if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+    <script>
+        // Add click interaction to skill cards (scoped to the new section)
+        document.querySelectorAll('#game-design-skills .skill-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // Placeholder for coin collect sound effect (as requested)
+                console.log('Playing coin collect sound effect...'); 
+                
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = 'translateY(-5px)';
+                }, 150);
+            });
+        });
+    </script>
+</body>
+</html>
