@@ -1207,3 +1207,340 @@ body {
         padding: 15px 10px;
     }
 }
+/* --- POPUP MODAL STYLES (Add to bottom of index.css) --- */
+/* --- POPUP MODAL STYLES (Add to bottom of index.css) --- */
+
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Very dark background for video focus */
+    z-index: 2000; 
+    
+    /* Lock the background so it doesn't scroll */
+    overflow: hidden; 
+    backdrop-filter: blur(1px);
+}
+
+.slides-container {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    height: 100%; 
+    
+    /* Scroll INSIDE the popup */
+    overflow-y: scroll; 
+    padding: 100px 20px 20px 20px; 
+    display: flex;
+    flex-direction: column;
+
+    /* Hide Scrollbar (Firefox) */
+    scrollbar-width: none;  
+    /* Hide Scrollbar (IE/Edge) */
+    -ms-overflow-style: none;  
+}
+
+/* Hide Scrollbar (Chrome/Safari/Opera) */
+.slides-container::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* --- TEXT STYLES --- */
+.project-info-modal {
+    padding: 0 0 40px 0;
+    text-align: left;
+    color: #fff;
+    width: 100%;
+    animation: fadeIn 0.5s ease;
+}
+
+.project-title-modal {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.project-desc-modal {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- MEDIA STYLES (Images & Videos) --- */
+.slides-container img, 
+.slides-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    /* No gap between images/videos */
+    margin-bottom: 0; 
+    
+    /* Optional: Slight shadow to separate media if needed */
+    
+}
+
+.slides-container video {
+    background: #000; /* Black background while loading */
+    outline: none;
+}
+
+/* --- CLOSE BUTTON --- */
+.close-btn {
+    /* Pinned to the top right of the screen */
+    position: absolute; 
+    top: 20px; 
+    right: 30px;
+    font-size: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 2001;
+    background: transparent;
+    border: none;
+    line-height: 1;
+    transition: transform 0.2s;
+}
+
+.close-btn:hover { color: #ff4444; transform: scale(1.1); }
+
+/* --- ANIMATIONS & MOBILE --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* --- MOBILE RESPONSIVENESS (Add/Replace at the bottom of CSS) --- */
+@media (max-width: 768px) {
+    /* 1. Container: Use full width and adjust padding */
+    .slides-container { 
+        width: 100%;       
+        padding: 80px 15px 30px 15px; /* Less side padding, keeping top space for X button */
+    }
+
+    /* 2. Text: Make it readable on small screens */
+    .project-title-modal { 
+        font-size: 28px;   /* Smaller title so it doesn't break lines awkwardly */
+        margin-bottom: 15px; 
+    }
+
+    .project-desc-modal { 
+        font-size: 16px;   /* Standard readable mobile font size */
+    }
+
+    /* 3. Close Button: slightly smaller and better positioned */
+    .close-btn {
+        top: 15px;         
+        right: 20px;       
+        font-size: 40px;   /* Smaller icon so it doesn't block content */
+    }
+}
+/* --- FOOTER & SOCIAL LINKS --- */
+.modal-footer {
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid #333; /* Divider line */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* The Big Play Button */
+.btn-itch {
+    display: inline-block;
+    background-color: #fa5c5c; /* Itch.io Red */
+    color: #ffffff;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 800; 
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(250, 92, 92, 0.4);
+    transition: transform 0.2s;
+}
+
+.btn-itch:hover {
+    transform: scale(1.05);
+    background-color: #ff7878;
+}
+
+/* Social Media Text Links */
+.social-text {
+    color: #888;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.social-links-container a {
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s;
+}
+
+.social-links-container a:hover {
+    color: #fa5c5c; 
+    border-color: #fa5c5c;
+}
+
+@media (max-width: 768px) {
+    .social-links-container a { display: block; margin: 15px 0; }
+}
+/* --- FOOTER & PLAY BUTTON --- */
+.modal-footer {
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid #333; /* Divider line */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* The Big Play Button */
+.btn-itch {
+    display: inline-block;
+    background-color: #fa5c5c; /* Itch.io Red */
+    color: #ffffff;
+    padding: 15px 40px;
+    font-size: 22px;
+    font-weight: 800; 
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(250, 92, 92, 0.4);
+    transition: transform 0.2s;
+    text-transform: uppercase; /* Forces capital letters */
+}
+
+.btn-itch:hover {
+    transform: scale(1.05);
+    background-color: #ff7878;
+}
+
+/* Social Media Links */
+.social-links-container p {
+    color: #888;
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.social-links-container a {
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links-container a:hover {
+    color: #fa5c5c; 
+}
+/* --- SCROLL ANIMATION LOGIC --- */
+
+/* Renamed from .hidden to .on-scroll to fix Tailwind conflict */
+.on-scroll {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50px);
+    transition: all 1s ease; 
+}
+
+/* The Ending State (Visible) */
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* --- CLEAN SCROLL ANIMATION --- */
+
+/* 1. The Start State (Invisible & Lower) */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px); /* Slides up from 30px down */
+    transition: all 0.8s ease-out;
+}
+
+/* 2. The Active State (Visible & In Place) */
+/* JavaScript adds this class when you scroll to it */
+.reveal-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional: Stagger the cards so they pop in one-by-one */
+.reveal-on-scroll:nth-child(2) { transition-delay: 100ms; }
+.reveal-on-scroll:nth-child(3) { transition-delay: 200ms; }
+.reveal-on-scroll:nth-child(4) { transition-delay: 300ms; }
+.reveal-on-scroll:nth-child(5) { transition-delay: 400ms; }
+.reveal-on-scroll:nth-child(6) { transition-delay: 500ms; }
+
+/* ------------------------------------------------------ */
+
+
+
+/* --- FIXES FOR BACKGROUNDS & ANIMATION --- */
+
+/* Force the body background to black to kill the blue line */
+body {
+    background-color: black !important;
+}
+
+/* Ensure the Project Section is solid black */
+#projects {
+    background-color: black !important;
+    position: relative;
+    z-index: 5;
+}
+
+/* Ensure Technical Skills is solid black */
+#technical-skills-icons {
+    background-color: black !important;
+}
+
+/* Make sure the project cards cover the background */
+.project-block {
+    background-color: black; /* Fills the gap behind the card */
+}
+
+
+
+
+
+
+/* --- FIX FOR FAST ICONS (FIGMA & CANVA) --- */
+
+/* Item 7 (Figma) - waits 0.6 seconds */
+.reveal-on-scroll:nth-child(7) { 
+    transition-delay: 600ms; 
+}
+
+/* Item 8 (Canva) - waits 0.7 seconds */
+.reveal-on-scroll:nth-child(8) { 
+    transition-delay: 700ms; 
+}
+
+
+
+/* --- REMOVE BROWSER SCROLLBAR (Keep Scrolling Active) --- */
+
+/* 1. Hide scrollbar for Chrome, Safari, and Opera */
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* 2. Hide scrollbar for Firefox, IE, and Edge */
+html, body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

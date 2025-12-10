@@ -40,7 +40,19 @@
     </style>
 </head>
 
+
+
 <body class="min-h-full bg-gray-900 text-white font-sans">
+
+    <header class="header">
+        <div class="logo">My Portfolio</div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about-me-section-1">About Me</a>
+            <a href="#game-design-skills">Skills</a>
+            <a href="#projects-header">Projects</a>
+        </nav>
+    </header>
 
     <section class="hero-block" id="home">
         <video autoplay muted loop id="bg-video">
@@ -49,16 +61,6 @@
         </video>
 
         <div class="overlay">
-            <header class="header">
-                <div class="logo">My Portfolio</div>
-                <nav class="nav">
-                    <a href="#home">Home</a>
-                    <a href="#about-me-section-1">About Me</a>
-                    <a href="#game-design-skills">Skills</a>
-                    <a href="#projects-header">Projects</a>
-                </nav>
-            </header>
-
             <section class="hero">
                 <h1>Hello, I'm Bisal</h1>
                 <p>A passionate game designer & developer. I create interactive 3D experiences.</p>
@@ -72,6 +74,9 @@
             </section>
         </div>
     </section>
+
+
+
 
     <section id="about-me-section-1">
         <div class="about-container">
@@ -136,66 +141,69 @@
         </div>
     </section>
     
+
+
+
+
+
     
     <section id="game-design-skills" class="py-12 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <header class="text-center mb-16 animate-fade-in">
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    🎮 Advanced Game Design Skills
-                </h1>
-                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-                    Crafting immersive experiences through creative design and technical expertise
-                </p>
-            </header>
+    <div class="container mx-auto px-6">
+        <header class="text-center mb-16 reveal-on-scroll">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                🎮 Advanced Game Design Skills
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Crafting immersive experiences through creative design and technical expertise
+            </p>
+        </header>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                
-                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in">
-                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
-                        <i class="fas fa-dice-d6 text-purple-400 mr-3"></i> Game Mechanics
-                    </h2>
-                    <p class="text-sm sm:text-base text-gray-400 mb-6">Designing core rules and systems for player interaction.</p>
-                </div>
-
-                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in" style="animation-delay: 0.1s;">
-                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
-                        <i class="fas fa-map-marked-alt text-pink-400 mr-3"></i> Level Design
-                    </h2>
-                    <p class="text-sm sm:text-base text-gray-400 mb-6">Creating compelling and engaging player spaces and environments.</p>
-                </div>
-
-                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in" style="animation-delay: 0.2s;">
-                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
-                        <i class="fas fa-book-reader text-blue-400 mr-3"></i> Narrative & Lore
-                    </h2>
-                    <p class="text-sm sm:text-base text-gray-400 mb-6">Developing deep, cohesive stories and background world knowledge.</p>
-                </div>
-                
-                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in" style="animation-delay: 0.3s;">
-                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
-                        <i class="fas fa-drafting-compass text-teal-400 mr-3"></i> Prototyping
-                    </h2>
-                    <p class="text-sm sm:text-base text-gray-400 mb-6">Quickly iterating and testing design concepts using Unity.</p>
-                </div>
-                
-                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in" style="animation-delay: 0.4s;">
-                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
-                        <i class="fas fa-fist-raised text-red-400 mr-3"></i> Combat Design
-                    </h2>
-                    <p class="text-sm sm:text-base text-gray-400 mb-6">Tuning satisfying and challenging combat loops and enemy encounters.</p>
-                </div>
-
-                <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer animate-fade-in" style="animation-delay: 0.5s;">
-                    <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
-                        <i class="fas fa-file-alt text-yellow-400 mr-3"></i> GDD & Docs
-                    </h2>
-                    <p class="text-sm sm:text-base text-gray-400 mb-6">Writing clear, comprehensive Game Design Documents and specs.</p>
-                </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer reveal-on-scroll">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                    <i class="fas fa-dice-d6 text-purple-400 mr-3"></i> Game Mechanics
+                </h2>
+                <p class="text-sm sm:text-base text-gray-400 mb-6">Designing core rules and systems for player interaction.</p>
             </div>
+
+            <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer reveal-on-scroll">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                    <i class="fas fa-map-marked-alt text-pink-400 mr-3"></i> Level Design
+                </h2>
+                <p class="text-sm sm:text-base text-gray-400 mb-6">Creating compelling and engaging player spaces and environments.</p>
             </div>
-    </section>
 
+            <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer reveal-on-scroll">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                    <i class="fas fa-book-reader text-blue-400 mr-3"></i> Narrative & Lore
+                </h2>
+                <p class="text-sm sm:text-base text-gray-400 mb-6">Developing deep, cohesive stories and background world knowledge.</p>
+            </div>
+            
+            <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer reveal-on-scroll">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                    <i class="fas fa-drafting-compass text-teal-400 mr-3"></i> Prototyping
+                </h2>
+                <p class="text-sm sm:text-base text-gray-400 mb-6">Quickly iterating and testing design concepts using Unity.</p>
+            </div>
+            
+            <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer reveal-on-scroll">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                    <i class="fas fa-fist-raised text-red-400 mr-3"></i> Combat Design
+                </h2>
+                <p class="text-sm sm:text-base text-gray-400 mb-6">Tuning satisfying and challenging combat loops and enemy encounters.</p>
+            </div>
 
+            <div class="skill-card bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl hover:shadow-white-500/50 transform transition duration-300 hover:translate-y-[-5px] cursor-pointer reveal-on-scroll">
+                <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                    <i class="fas fa-file-alt text-yellow-400 mr-3"></i> GDD & Docs
+                </h2>
+                <p class="text-sm sm:text-base text-gray-400 mb-6">Writing clear, comprehensive Game Design Documents and specs.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -209,49 +217,49 @@
 <section id="technical-skills-icons" class="py-12 bg-black flex items-center justify-center">
     <div class="w-full max-w-4xl p-8 rounded-2xl">
         
-        <header class="text-center mb-16">
+        <header class="text-center mb-16 reveal-on-scroll">
             <h1 class="text-4xl font-bold text-white-900 mb-4">Technical Skills</h1>
             <p class="text-lg text-white-600">Professional expertise across development, design, and productivity tools</p>
         </header>
 
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-x-12 gap-y-8 justify-items-center">
             
-            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200 reveal-on-scroll">
                 <i class="fab fa-unity text-5xl"></i>
                 <span class="text-lg">Unity</span>
             </div>
             
-            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200 reveal-on-scroll">
                 <i class="fas fa-code text-4xl"></i> 
                 <span class="text-lg">C#</span>
             </div>
 
-            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200 reveal-on-scroll">
                 <i class="fab fa-github text-5xl"></i>
                 <span class="text-lg">GitHub</span>
             </div>
             
-            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200 reveal-on-scroll">
                 <i class="fab fa-microsoft text-5xl"></i>
                 <span class="text-lg">Microsoft Office</span>
             </div>
 
-            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200 reveal-on-scroll">
                 <i class="fas fa-palette text-4xl"></i>
                 <span class="text-lg">Photoshop</span>
             </div>
             
-            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200 reveal-on-scroll">
                 <i class="fas fa-laptop-code text-4xl"></i>
                 <span class="text-lg">Visual Studio</span>
             </div>
             
-            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200 reveal-on-scroll">
                 <i class="fab fa-figma text-5xl"></i>
                 <span class="text-lg">Figma</span>
             </div>
 
-            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200">
+            <div class="flex flex-col items-center space-y-2 text-white hover:text-gray-400 transition duration-200 reveal-on-scroll">
                 <i class="fas fa-paint-brush text-4xl"></i>
                 <span class="text-lg">Canva</span>
             </div>
@@ -263,73 +271,69 @@
 
 
 
- <header class="text-center bg-black ">
-            <h1 class="text-4xl font-bold text-white-900 mb-4">Projects</h1>
-            <p class="text-lg text-white-600">A showcase of projects from concept to completion, </p>
-                <p>demonstrating skills in systems design, narrative, and prototyping.</p>
-        </header>
+<header class="text-center bg-black reveal-on-scroll">
+        <h1 class="text-4xl font-bold text-white-900 mb-4">Projects</h1>
+        <p class="text-lg text-white-600">A showcase of projects from concept to completion,</p>
+        <p>demonstrating skills in systems design, narrative, and prototyping.</p>
+    </header>
 
-
-    <!-- <section class="projects-title-section" id="projects-header">
-        <h1 class="projects-main-title"><br><span>PROJECTS</span></h1>
-        
-    </section> -->
     <section id="projects">
         
-        <div class="project-block white-bg">
+        <div class="project-block white-bg reveal-on-scroll">
             <div class="project-right-media">
                 <div class="project-content">
-                    <h2 class="project-title">Hearvest Of The Dead !</h2>
-                    <p class="project-description">An graphic novel adventure game about growing up in monster society.</p>
+                    <h2 class="project-title">Harvest Of The Dead</h2>
+                    <p class="project-description">A third-person post-apocalyptic survival game where you play as a farmer trying to rebuild humanity after a deadly virus effects the world.</p>
                     <div class="project-buttons">
-                        <a href="-port71.html" class="btn-more-info">More Info</a>
-                        <a href="https://store.steampowered.com/" target="_blank" class="btn-steam">Get It on ITCH.IO</a>
+                        <button class="btn-more-info" onclick="openProject('project1')">More Info</button>
+                        <a href="https://yourname.itch.io/harvest-of-the-dead" target="_blank" class="btn-steam">Get It on ITCH.IO</a>
                     </div>
                 </div>
                 <div class="project-media">
-                    <img src="Project-image 1.svg" alt="Monster Loves You Too Screenshot">
+                    <img src="t1.png" alt="Screenshot">
                 </div>
             </div>
         </div>
 
-
-
-        <div class="project-block black-bg">
+        <div class="project-block black-bg reveal-on-scroll">
              <div class="project-left-media">
                  <div class="project-media">
-                    <img src="Project-2.svg" alt="Remastered Project Screenshot">
+                    <img src="t2.png" alt="Screenshot">
                 </div>
                 <div class="project-content">
-                    <h2 class="project-title">Cube - Runner </h2>
+                    <h2 class="project-title">Cube - Runner</h2>
                     <p class="project-description">The next chapter in our award-winning skydiving sequel.</p>
                     <div class="project-buttons">
-                        <a href="port72.html" class="btn-more-info">More Info!</a>
-                        <a href="https://store.steampowered.com/" target="_blank" class="btn-steam">Get It on Steam!</a>
+                        <button class="btn-more-info" onclick="openProject('project2')">More Info!</button>
+                        <a href="https://yourname.itch.io/cube-runner" target="_blank" class="btn-steam">Get It on Itch.io!</a>
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <div class="project-block white-bg">
+        <div class="project-block white-bg reveal-on-scroll">
             <div class="project-right-media">
                 <div class="project-content">
-                    <h2 class="project-title">H---------------d !</h2>
+                    <h2 class="project-title">Hybrid Project</h2>
                     <p class="project-description">An graphic novel adventure game about growing up in monster society.</p>
                     <div class="project-buttons">
-                        <a href="-port71.html" class="btn-more-info">More Info</a>
-                        <a href="https://store.steampowered.com/" target="_blank" class="btn-steam">Get It on ITCH.IO</a>
+                         <button class="btn-more-info" onclick="openProject('project3')">More Info</button>
+                        <a href="#" target="_blank" class="btn-steam">Get It on ITCH.IO</a>
                     </div>
                 </div>
                 <div class="project-media">
-                    <img src="Project-image 1.svg" alt="Monster Loves You Too Screenshot">
+                    <img src="Project-image 1.svg" alt="Screenshot">
                 </div>
             </div>
         </div>
 
     </section>
 
-
+   <div id="modal" class="modal-overlay" onclick="closeModalOutside(event)">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <div id="slideStack" class="slides-container"></div>
+    </div>
+    </div>
 
 
 <a href="#" class="scrollup" id="scroll-up">
