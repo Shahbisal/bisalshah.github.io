@@ -99,7 +99,7 @@ const projectData = {
     },
     'project2': {
         title: "Cube - Runner",
-        description: "High-speed physics and procedural generation.",
+        description: "Cube Runner is a 3D isometric  game developed for the Windows platform. Unlike traditional endless runners, it features handcrafted levels, structured progression, and a thoughtfully balanced difficulty curve to deliver a more engaging and immersive gameplay experience.",
         gameLink: "https://yourname.itch.io/cube-runner", 
         images: [
             't2.png',
