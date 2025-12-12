@@ -102,7 +102,19 @@ const projectData = {
         description: "High-speed physics and procedural generation.",
         gameLink: "https://yourname.itch.io/cube-runner", 
         images: [
-            't2.png'
+            't2.png',
+            'c1.png',
+            'c2.png',
+            'c3.png',
+            'c4.png',
+            'c5.png',
+            'c6.png',
+            'c7.png',
+            'c8.png',
+            'c9.png',
+            'c10.png',
+            'c11.png',
+
         ]
     },
     'project3': {
