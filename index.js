@@ -117,6 +117,7 @@ const projectData = {
 
         ]
     },
+    
     'project3': {
         title: "Hybrid Project",
         description: "An graphic novel adventure game about growing up in monster society.",
@@ -124,8 +125,43 @@ const projectData = {
         images: [
             'Project-image 1.svg'
         ]
+    },
+    // --- PASTE THIS AFTER 'project3' (Don't forget the comma before it!) ---
+    
+    'art1': {
+        title: "Character Design",
+        description: "A collection of hero sketches, NPC concepts, and costume designs created in Photoshop and Procreate.",
+        gameLink: "", // Empty = No 'Play' button will appear
+        images: [
+            'p3.png',
+            'p4.png', // Add your extra art files here
+            'p5.png'
+        ]
+    },
+    'art2': {
+        title: "Concept Art",
+        description: "Environmental concept art exploring different moods, lighting, and world-building elements.",
+        gameLink: "", 
+        images: [
+            't1.png',
+            'p6.png',
+            'p7.png'
+        ]
+    },
+    'art3': {
+        title: "Level Design",
+        description: "Top-down layouts, greyboxing prototypes, and flow maps for game levels.",
+        gameLink: "", 
+        images: [
+            'p2.png',
+            'p8.png',
+            'p9.png'
+        ]
     }
 };
+
+
+
 
 const socialLinks = {
     linkedin: "https://www.linkedin.com/in/yourprofile",
