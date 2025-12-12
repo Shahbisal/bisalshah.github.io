@@ -123,7 +123,7 @@ const projectData = {
         description: "An graphic novel adventure game about growing up in monster society.",
         gameLink: "", 
         images: [
-            'Project-image 1.svg'
+            'ppp3.png',
         ]
     },
     // --- PASTE THIS AFTER 'project3' (Don't forget the comma before it!) ---
@@ -133,9 +133,8 @@ const projectData = {
         description: "A collection of hero sketches, NPC concepts, and costume designs created in Photoshop and Procreate.",
         gameLink: "", // Empty = No 'Play' button will appear
         images: [
-            'p3.png',
-            'p4.png', // Add your extra art files here
-            'p5.png'
+            'pending design.png',
+            
         ]
     },
     'art2': {
@@ -143,9 +142,8 @@ const projectData = {
         description: "Environmental concept art exploring different moods, lighting, and world-building elements.",
         gameLink: "", 
         images: [
-            't1.png',
-            'p6.png',
-            'p7.png'
+            'pending design.png',
+            
         ]
     },
     'art3': {
@@ -153,9 +151,8 @@ const projectData = {
         description: "Top-down layouts, greyboxing prototypes, and flow maps for game levels.",
         gameLink: "", 
         images: [
-            'p2.png',
-            'p8.png',
-            'p9.png'
+            'pending design.png',
+            
         ]
     }
 };
