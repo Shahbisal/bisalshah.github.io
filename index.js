@@ -106,6 +106,7 @@ const projectData = {
             'c1.png',
             'c2.png',
             'c3.png',
+            'cuberunner.mp4', 
             'c4.png',
             'c5.png',
             'c6.png',
